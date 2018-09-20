@@ -1,32 +1,327 @@
-# Object Orientation
+# Setting up a Professional Data Science Environment
 
-## Overview
+Whether you’re just looking to learn the basics or want to become a professional data scientist, it’s important to take a little time to “set yourself up for success” by installing and learning to use the right tools on your computer.
 
-We'll introduce the concept of Object Oriented Programming (OOP)
+If you already have Git and Anaconda installed, feel free to jump straight to the [cloning, virtual environment setup and testing](#cloning-this-repository).
 
-## Object-Oriented Programming (OOP)
+## Objectives
+* Install a professional data science environment
 
-*An object-oriented approach to application development makes programs more intuitive to design, faster to develop, more amenable to modification, and easier to understand.*  
-—[*Object-Oriented Programming with Objective-C*][apple_oop_guide_intro], Apple Inc.
+## What tools do professional data scientists use?
+* **Python** - There are many languages that can be used for data science, but these days most data scientists are using Python to write their code.
+* **Jupyter Notebook** - Most of those data scientists use Jupyter Notebook for writing their * Python - a tool that allows you to mix comments in-between your code snippets so you can document and share your thinking process and make it easier for others to review, replicate and expand on your work.
+* **Anaconda** - Anaconda is one of the most popular way for data scientists to install Python and Jupyter notebook on their computers. It also provides package management and virtual environments so you can get all the latest data science tools running like NumPy, SciPy and Tensorflow, and so you can use different versions of python and your packages for different projects without them conflicting with each other.
+* **Git** - Git is a version control system. It’s a way of keeping track of all the changes made across your project. Think of it like “track changes” in Word - but with the ability to track changes across multiple documents. At Flatiron School, we use git to keep track of all of the lessons we create and all the changes we make to them.
+* **GitHub** - GitHub is a website where data scientists (and programmers) can save their work in case their computer breaks, and share it with their team or the world! At Flatiron School, we store all of our lessons on GitHub.
 
-[apple_oop_guide_intro]: https://developer.apple.com/library/ios/documentation/Cocoa/Conceptual/OOP_ObjC/Introduction/Introduction.html#//apple_ref/doc/uid/TP40005149-CH1-SW2
+It’s going to take us a few minutes to get this all installed, but once we do, not only will you be set-up for working through the course, but you’ll also have a professional data science setup on your computer for any future courses or projects you want to work on!
 
-It's natural to wonder, "how can a string of ones and zeroes be referred to as an 'object'?" The use of the word "object" is an abstraction of thought. An "object" in code has no more physical form than does a word in any human language. Sure, words have physical representations: speaking a word causes air to vibrate in a sound wave, ink on a page can be shaped into symbols that represent the word, a meaning can be pointed at or mimed out; but none of these are the word itself. Human language is a system of abstraction: it communicates the *idea* of a thing, but not the thing itself.
+## Computer Prerequisites
+There are many amazing computing devices available these days, but not all of them will allow you to do data science. We love smart phones, flip phones, chromebooks, tablets (including iPads), game boys, nintendo switches, roku’s and arduino’s. You’re not going to be able to complete this course on any of those devices - sorry.
 
-![](https://upload.wikimedia.org/wikipedia/en/b/b9/MagrittePipe.jpg)  
-Translation: "This is not a pipe." - [*The Treachery of Images*](https://en.wikipedia.org/wiki/The_Treachery_of_Images), [René Magritte](https://en.wikipedia.org/wiki/Ren%C3%A9_Magritte), 1927  
+You’re going to need a computer (laptop or desktop). It should be running a recent (last 3-4 years) version of MacOS, Windows or Linux, and ideally it should have 8Gb of RAM and at least 20Gb free hard drive space. More information [here](https://flatironschool.com/wp-content/uploads/Student-Facing-Computer-Requirements.pdf):
 
-This image of a pipe is no more a pipe than the word "pipe" is a pipe; in the same way, a code object named `pipe` is not a pipe, but only another form of representing a pipe.
+Assuming you have a computer that meets the requirements, let’s start by getting git Installed.
 
->As humans, we’re constantly faced with myriad facts and impressions that we must make sense of. To do so, we must abstract underlying structure away from surface details and discover the fundamental relations at work. Abstractions reveal causes and effects, expose patterns and frameworks, and separate what’s important from what’s not. Object orientation provides an abstraction of the data on which you operate; moreover, it provides a concrete grouping between the data and the operations you can perform with the data—in effect giving the data behavior.  
->—[*Object-Oriented Programming with Objective-C*](https://developer.apple.com/library/ios/documentation/Cocoa/Conceptual/OOP_ObjC/Articles/ooOOP.html#//apple_ref/doc/uid/TP40005149-CH8-SW3), Apple Inc.
+## Installing Git
+For each tool, we’ll provide installation instructions for the two most common operating systems - Windows and MacOS.
 
-A code object representing a water pipe (instead of a smoking pipe) might contain values for `length`, `diameter`, `material`, and `manufacturer`. The bundling of these individual pieces of information together begins to form a larger whole.
+## Windows
+Go [here](https://git-scm.com/download/win). Then double click on the downloaded exe file. It may open a window asking if you want to allow this application to make changes to your device. Just click “yes”. It will then open the installer. Click “next” to accept the license, and when you “select components” on the next screen make sure to keep the “Windows explorer integration” options checked.
 
-Object-Oriented Programming, however, does more than just bundle up individual pieces of data that represent a "thing" — it also bundles customized functions that can be performed *on* that data. These are called **methods**: behaviors that an object performs upon its internal data and even upon other code objects.
+Note - if there are any differences in the options provided in the installer you download, just accept the defaults - they’ll probably be fine!
 
-An object in code is a thing with all the data and all the logic required to complete a task. Objects are models and metaphors for the problems we solve in code.
+![screen-1](http://curriculum-content.s3.amazonaws.com/data-science/screen-1.png)
 
-Object-oriented programming was born from the trend of making digital lives reflect our real lives. In the 1970's, [Adele Goldberg](https://en.wikipedia.org/wiki/Adele_Goldberg_%28computer_scientist%29) and [Alan Kay](https://en.wikipedia.org/wiki/Alan_Kay) developed an object-oriented language at Xerox PARC called SmallTalk, which was used in the first personal computer.
+When asked to select an editor, if you’re familiar with vi/vim feel free to use that, otherwise you should probably select an easier to use text editor such as nano.
 
-Python comes with a few types of Objects to get us started, things like `int` for Integer, `str` for String, `list` for List, etc. We call these base types of Objects "Primitives." But what if we wanted to create a new type in our programming universe, a new kind of object for our code? That's what the `class` keyword and object orientation allows us to do.
+![screen-2](http://curriculum-content.s3.amazonaws.com/data-science/screen-2.png)
+
+When asked to adjust your PATH environment, either of the first two options is fine as you’ll mainly be using Git from the new “Git Bash” program that is being installed. You’re probably best to select “use Git from the Windows Command Prompt” as it’ll give you the option of using it there in the future if you wish.
+
+![screen-0](http://curriculum-content.s3.amazonaws.com/data-science/screen-0.png)
+
+For https, you should select the “use the OpenSSL library” option.
+
+![screen-3](http://curriculum-content.s3.amazonaws.com/data-science/screen-3.png)
+
+
+Select the default option for handling line endings
+
+![screen-4](http://curriculum-content.s3.amazonaws.com/data-science/screen-4.png)
+
+And use MinTTY as the default terminal emulator
+
+![screen-5](http://curriculum-content.s3.amazonaws.com/data-science/screen-5.png)
+
+For extra options, enable the file system caching and the git credential manager.
+
+![screen-6](http://curriculum-content.s3.amazonaws.com/data-science/screen-6.png)
+
+And then wait while git is installed onto your computer.
+
+![screen-7](http://curriculum-content.s3.amazonaws.com/data-science/screen-7.png)
+
+Finally, click finish to complete setup
+
+![screen-8](http://curriculum-content.s3.amazonaws.com/data-science/screen-8.png)
+
+#### MacOS
+If you are comfortable with the command line and have installed [homebrew](https://brew.sh/), you should install git by running the command `brew install git` in a terminal window.  
+
+If you have no idea what the last paragraph meant, just go [here](https://git-scm.com/download/mac). Then double click on the downloaded dmg file and it will open a small finder window looking something like this (the exact name and version will change over time):
+
+![screen-10](http://curriculum-content.s3.amazonaws.com/data-science/screen-10.png)
+
+Double click on the .pkg file to run it. When you try to do that you might get a security warning pop up that looks something like this:
+
+![screen-11](http://curriculum-content.s3.amazonaws.com/data-science/screen-11.png)
+
+If that happens, just click on the apple at the top left of the screen, select “system preferences” from the drop down menu. Then select “Security and Privacy”, select the “General” tag, click on the lock to make changes at the bottom of the window (you’ll have to enter your password). Below the “Allow apps downloaded from” option, you should see a message stating that an app was blocked from opening. (If you don’t see this message, double click on the .pkg file again and then look back at the Security & Privacy screen and it should pop up).  Click the “open anyway” button.
+
+You should then see a message confirming whether you really want to open the app.
+
+![screen-12](http://curriculum-content.s3.amazonaws.com/data-science/screen-12.png)
+
+Click on the “open” button. You should then see an installer screen.
+
+![screen-13](http://curriculum-content.s3.amazonaws.com/data-science/screen-13.png)
+
+Click “continue”, then “install”, enter your password when prompted, and when the installation is complete, click the “close” button.
+
+![screen-14](http://curriculum-content.s3.amazonaws.com/data-science/screen-14.png)
+
+## Confirming your git installation (all OS’s)
+
+To confirm you have installed Git successfully, open a terminal window (in Windows, using the start menu, open the “Git Bash” program to get a terminal, on a mac, just open the “Terminal” app in the “Utilities” folder within your “Applications” folder). Type `git --version`. It should return the version of git you are running.
+
+While you’re in the terminal, you should also set up your name and email address.
+
+Type `git config --global user.name`
+
+If it returns your name, you’re set! If it returns nothing or displays an error message, type `git config --global user.name “Your Name”` - replacing Your Name with your name.
+
+Type `git config --global user.email`
+
+If it returns your email address, you’re set! If it returns nothing or displays an error message, type `git config --global user.email your@email.com` - replacing your@email.com with your email address.
+
+## Installing Python and Jupyter Notebook via Anaconda
+
+The easiest way to get set up with Python and Jupyter Notebook so you can start coding is to install the Anaconda distribution. Let’s go through the install instructions  for the two most common operating systems - Windows and MacOS.
+
+#### Windows
+Go [here](https://www.anaconda.com/download/#windows) and click on the “download” button for the Python 3.x (currently 3.6) version of Anaconda.
+
+![screen-15](http://curriculum-content.s3.amazonaws.com/data-science/screen-15.png)
+
+A window may pop up asking if you want to give Anaconda your information in return for a cheat sheet - you do not need to do so unless you want to.
+
+You should see in the bottom of your browser window that a .exe file is being downloaded. When it finishes downloading, click on the arrow to the right of the name of the file in the bottom left corner of your browser, and select “open”.
+
+![screen-16](http://curriculum-content.s3.amazonaws.com/data-science/screen-16.png)
+
+If you don’t see the file in your browser, you can also just open up Windows Explorer, navigate to the “Downloads” directory and double click on the Anaconda file in the list to open it.
+
+![screen-17](http://curriculum-content.s3.amazonaws.com/data-science/screen-17.png)
+
+That will open the Anaconda installer which will install the software for you on your computer.
+
+![screen-18](http://curriculum-content.s3.amazonaws.com/data-science/screen-18.png)
+
+Click “next”, then “I agree” to accept the license, and you can install for “just me”, clicking next. Then select the destination folder (the default should work for most people).
+
+![screen-19](http://curriculum-content.s3.amazonaws.com/data-science/screen-19.png)
+
+On the next screen, make sure to check the "Add Anaconda to my PATH environment" check box. It will inform you that it's not recommended, but this is required to be able to access Anaconda from the command line and the final instructions in this guide won't work unless you check this box. Then click “install”.
+
+![screen-20](http://curriculum-content.s3.amazonaws.com/data-science/screen-00.png)
+
+This step may take a few minutes.
+
+![screen-21](http://curriculum-content.s3.amazonaws.com/data-science/screen-21.png)
+
+Once the installation is complete,
+
+![screen-22](http://curriculum-content.s3.amazonaws.com/data-science/screen-22.png)
+
+Hit “next”. You can skip the Visual Code Studio installation
+
+![screen-23](http://curriculum-content.s3.amazonaws.com/data-science/screen-23.png)
+
+And then finally click “finish”.
+
+![screen-24](http://curriculum-content.s3.amazonaws.com/data-science/screen-24.png)
+
+It’ll open up a browser window which you can just close down.
+
+![screen-25](http://curriculum-content.s3.amazonaws.com/data-science/screen-25.png)
+
+And that’s the process of installing Anaconda. The next step is to test your installation.
+
+#### Mac
+Go [here](https://www.anaconda.com/download/#macos) and click on the “download” button for the Python 3.x (currently 3.6) version of Anaconda.
+
+![screen-26](http://curriculum-content.s3.amazonaws.com/data-science/screen-26.png)
+
+You should see in the bottom of your browser window that a .pkg file is being downloaded. When it finishes downloading, click on the arrow to the right of the name of the file in the bottom left corner of your browser, and select “open”.
+
+![screen-27](http://curriculum-content.s3.amazonaws.com/data-science/screen-27.png)
+
+If you don’t see the file in your browser, you can also just open up the finder, navigate to the “Downloads” directory and double click on the Anaconda file in the list to open it.
+
+![screen-28](http://curriculum-content.s3.amazonaws.com/data-science/screen-28.png)
+
+You’ll be informed that the package will run a program to see whether the software can be installed. Click “continue”.
+
+![screen-29](http://curriculum-content.s3.amazonaws.com/data-science/screen-29.png)
+
+You’ll then see a wizard that will run you through the installation process. Click continue on the first screen.
+
+![screen-30](http://curriculum-content.s3.amazonaws.com/data-science/screen-30.png)
+
+Then look at the read me, and click “continue” again.
+
+![screen-31](http://curriculum-content.s3.amazonaws.com/data-science/screen-31.png)
+
+You’ll then need to accept the license. Start by clicking “continue”
+
+![screen-32](http://curriculum-content.s3.amazonaws.com/data-science/screen-32.png)
+
+And then click on “agree” in the dialog that comes up and asks you to accept the license.
+
+![screen-33](http://curriculum-content.s3.amazonaws.com/data-science/screen-33.png)
+
+Then click on “install” to install the software.
+
+![screen-34](http://curriculum-content.s3.amazonaws.com/data-science/screen-34.png)
+
+And you’ll have to enter an administrative username and password for your computer to finally install the software.
+
+![screen-35](http://curriculum-content.s3.amazonaws.com/data-science/screen-35.png)
+
+The wizard will let you know next that it’s preparing the install, and then it’ll take a couple of minutes to install all of the necessary software.
+
+![screen-36](http://curriculum-content.s3.amazonaws.com/data-science/screen-36.png)
+
+You’ll be given the option to install Microsoft VSCode. For now, you can skip that option by clicking “continue”.
+
+![screen-37](http://curriculum-content.s3.amazonaws.com/data-science/screen-37.png)
+
+You should then see a final window informing you that the software was installed successfully. Click close to finish the installation.
+
+![screen-38](http://curriculum-content.s3.amazonaws.com/data-science/screen-38.png)
+
+If you’re asked whether you’d like to move the installer to trash, click the “Move to trash” button.
+
+![screen-39](http://curriculum-content.s3.amazonaws.com/data-science/screen-39.png)
+
+## Testing your installation
+
+To test your installation, on Windows, click on Start and then Anaconda Navigator in the program list (or search for Anaconda in the search bar and select Anaconda Navigator). On a Mac, open up the finder, and in the Applications folder, double click on Anaconda-Navigator.
+
+From now on, screenshots will be from a Mac, but we’ll highlight any material differences in the experience between the OS’s.
+
+The Anaconda Navigator is one of the ways you’ll be able to run Jupyter Notebooks. Click on the “launch” button in the Jupyter notebook tile.
+
+![screen-40](http://curriculum-content.s3.amazonaws.com/data-science/screen-40.png)
+
+On a mac you’ll see a terminal window pop up.
+
+![screen-41](http://curriculum-content.s3.amazonaws.com/data-science/screen-41.png)
+
+On both Windows and a Mac you’ll see a window in your web browser that allows you to open existing Jupyter notebooks or create a new one.
+
+![screen-42](http://curriculum-content.s3.amazonaws.com/data-science/screen-42.png)
+
+Click on the “New” button in the top right corner.
+
+![screen-43](http://curriculum-content.s3.amazonaws.com/data-science/screen-44.png)
+
+And select “Python 3” from the drop down list.
+
+When you do, you’ll see a new notebook in your browser window that looks something like this:
+
+![screen-44](http://curriculum-content.s3.amazonaws.com/data-science/screen-43.png)
+
+To make sure it’s working, click in the cell and type the following:
+
+```
+import sys
+print(sys.version)
+```
+
+Then hold down the shift key and hit enter to run the code in the cell. You should see an output something like this.
+
+![screen-45](http://curriculum-content.s3.amazonaws.com/data-science/screen-45.png)
+
+Don’t worry if the version number or date is slightly different. If you get a similar output (something that isn’t an error message), congratulations! You’ve got Anaconda, Python and the Jupyter notebook installed successfully!
+
+To shut down Jupyter notebook, just close the tabs in your browser containing the notebook and the list of noteboks. On a mac you should also click on the terminal window and hit “ctrl-C” to close the notebook.
+
+![screen-46](http://curriculum-content.s3.amazonaws.com/data-science/screen-46.png)
+
+
+You’ll then have to hit “y” and return to confirm that you want to close down Jupyter notebook.
+
+## Cloning this Repository
+
+To finish this setup process, you’re going to need to download a copy of the files in this repository. To do that, you need to start by opening a terminal window.
+
+If you’re on a windows machine, select “Anaconda Prompt” from either the start menu or the search bar and it’ll open up a terminal (don’t use the default Windows terminal - it may not work for this). If you’re working on a mac, open the “Terminal” app in the “Utilities” folder within your “Applications” folder.
+
+Let’s type `pwd` to “print the working directory. It should be somewhere you are OK downloading files to. If not, feel free to use the “cd” command to change directory to one you’d like to work from.
+
+Then type (or better still, cut and paste) `git clone https://github.com/learn-co-curriculum/setting-up-a-professional-data-science-environment`
+
+This will create a new subdirectory called setting-up-a-professional-data-science-environment which will contain a copy of all of the files from this repository.
+
+## Setting Up Virtual Environments
+
+As you do data science projects, you will spend a lot of your time using pre-written libraries to speed up your development. Examples include NumPy, Pandas and scikit-learn. As you work on different projects, you may also find that you end up using different versions of different libraries for different projects. The most common versioning issue is that some projects will run in Python 2 whereas others will run in Python 3, but you may also find that different projects depend on different versions of libraries like tensorflow.
+
+Occasionally, code that works in an old version of a library won’t work in a newer version. So if you open up a new project and install the dependencies, it’s possible that your old project won’t work any more.
+
+To avoid that problem, a best practice is to use “virtual environments”. Virtual environments allow you to have different versions of Python and different versions of the various libraries you use, so you can install a new version of a library for one project but still use the old version for another project. It’s almost as if you have multiple computers that you can swap between, each having a different setup and configuration, just by running a couple of commands.
+
+There is a build in virtual environment feature in Python, but we’re going to use the more flexible virtual environments provided by conda as part of the Anaconda distribution you installed.
+
+To use a new virtual environment, there are two steps you need to complete. The first step is to create the virtual environment. That may take a couple of minutes as your computer has to download the necessary version of Python and all of the libraries that you want to be able to use in that environment. The next step then is to “use” the virtual environment by activating it.
+
+If you want to learn more about conda environments, have a look at the [documentation](https://conda.io/docs/user-guide/tasks/manage-environments.html), otherwise, lets give this a try.
+
+You need to start by navigating into the root of this project folder, so you’re going to want to type `cd  setting-up-a-professional-data-science-environment` in your terminal.
+
+Then to create the environment, on a mac, type `conda env create -f environment.yml`. On windows, type `conda env create -f windows.yml`. Depending on the speed of your computer and your internet connection it may take up to five minutes for this to complete. While it does you should see output similar to that displayed below start to appear in your terminal.
+
+![screen-47](http://curriculum-content.s3.amazonaws.com/data-science/screen-47.png)
+
+If you see a message that states “WARNING: A newer version of conda exists”, run `conda update -n base conda` and then try again to create the environment using `conda env create -f environment.yml`.
+
+Next, try activating the environment. On a mac, type `source activate learn-env`. On windows, type `activate learn-env`.
+
+To confirm that it worked, type `conda info --envs` and confirm that the output in the terminal ends with /learn-env - e.g. *  /Users/peterbell/anaconda3/envs/learn-env
+
+## Running Tests
+
+There are lots of ways to use automated tests to improve your projects. If you’re writing some code and you want to make sure that it behaves as expected, it often makes sense to write tests (a) to make sure that it works the way you think it should and (b) to ensure that you don’t break it as you make changes to your code over time. It also allows you to start with the most important use cases and then explore and document edge cases over time.
+
+At Flatiron, we also use tests to provide students feedback on some of the labs we provide them. Often we’ll write automated tests for labs, so students can run the tests to see whether their code is working the way we expected it to, and perhaps even to get some hints on what they need to fix or change in their code.
+
+There are a number of test frameworks in Python, all of which are designed to make it easier to write tests. We have standardized on [Pytest](https://pytest.org/), which currently appears to be the most popular framework being used by data scientists.
+
+To run the tests, please run the command `python -m pytest -x`
+
+There are a couple of things going on here. It's really important to run the tests using the `python -m pytest` as it works slightly differently than just running `pytest`, and by adding the `-x` option, you're asking pytest to stop after the first failure, so were you to get multiple test failures you could focus on one at a time.
+
+The expected output should look something like the image below. In short, the first two tests should pass and the third one should fail with the message "This test *should* fail - if it doesn't, something is wrong!".
+
+![screen-48](http://curriculum-content.s3.amazonaws.com/data-science/screen-48.png)
+
+## Troubleshooting
+* If you get a message - ModuleNotFound ipynb, firstly make sure you activated the conda environment - run `conda info --envs` and make sure there is a star next to the learn-env which denotes that you're running that environment. If not, try re-running the command to activate the environment. If you are in the right environment and still get that error, try running `pip install ipynb`. It may fix the issue.
+* If you get a failure running the test "test_conda_environment_activated", after checking that you have activated the conda environment, try running `pip install obscure`. Again it should fix the issue with the test.
+
+
+## Congratulations!
+
+Congratulations! If you've gotten this far and everything has worked, you have a great baseline setup for working as a professional data scientist!
