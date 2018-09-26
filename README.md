@@ -1,3 +1,4 @@
+
 # Setting up a Professional Data Science Environment
 
 Whether you’re just looking to learn the basics or want to become a professional data scientist, it’s important to take a little time to “set yourself up for success” by installing and learning to use the right tools on your computer.
@@ -25,6 +26,7 @@ Assuming you have a computer that meets the requirements, let’s start by getti
 
 ## Installing Git
 For each tool, we’ll provide installation instructions for the two most common operating systems - Windows and MacOS.
+
 
 ## Windows
 Go [here](https://git-scm.com/download/win). Then double click on the downloaded exe file. It may open a window asking if you want to allow this application to make changes to your device. Just click “yes”. It will then open the installer. Click “next” to accept the license, and when you “select components” on the next screen make sure to keep the “Windows explorer integration” options checked.
@@ -325,3 +327,12 @@ The expected output should look something like the image below. In short, the fi
 ## Congratulations!
 
 Congratulations! If you've gotten this far and everything has worked, you have a great baseline setup for working as a professional data scientist!
+
+# Testing Your Installation
+
+The cell below is used by our tests to make sure they're working correctly.
+
+
+```python
+x = 4
+```
