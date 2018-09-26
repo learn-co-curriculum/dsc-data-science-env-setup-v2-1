@@ -1,11 +1,13 @@
 
 # Setting up a Professional Data Science Environment
 
+## Introduction
 Whether you’re just looking to learn the basics or want to become a professional data scientist, it’s important to take a little time to “set yourself up for success” by installing and learning to use the right tools on your computer.
 
-If you already have Git and Anaconda installed, feel free to jump straight to the [cloning, virtual environment setup and testing](#cloning-this-repository).
+If you already have Git and Anaconda installed, feel free to jump down to the cloning, virtual environment setup and testing towards the bottom of the page.
 
 ## Objectives
+You will be able to:
 * Install a professional data science environment
 
 ## What tools do professional data scientists use?
@@ -323,11 +325,6 @@ The expected output should look something like the image below. In short, the fi
 * If you get a message - ModuleNotFound ipynb, firstly make sure you activated the conda environment - run `conda info --envs` and make sure there is a star next to the learn-env which denotes that you're running that environment. If not, try re-running the command to activate the environment. If you are in the right environment and still get that error, try running `pip install ipynb`. It may fix the issue.
 * If you get a failure running the test "test_conda_environment_activated", after checking that you have activated the conda environment, try running `pip install obscure`. Again it should fix the issue with the test.
 
-
-## Congratulations!
-
-Congratulations! If you've gotten this far and everything has worked, you have a great baseline setup for working as a professional data scientist!
-
 # Testing Your Installation
 
 The cell below is used by our tests to make sure they're working correctly.
@@ -336,3 +333,7 @@ The cell below is used by our tests to make sure they're working correctly.
 ```python
 x = 4
 ```
+
+## Summary
+
+Congratulations! If you've gotten this far and everything has worked, you have a great baseline setup for working as a professional data scientist!
