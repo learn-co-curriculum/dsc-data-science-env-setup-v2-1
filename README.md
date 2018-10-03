@@ -2,9 +2,7 @@
 # Setting up a Professional Data Science Environment
 
 ## Introduction
-Whether you’re just looking to learn the basics or want to become a professional data scientist, it’s important to take a little time to “set yourself up for success” by installing and learning to use the right tools on your computer.
-
-If you already have Git and Anaconda installed, feel free to jump down to the cloning, virtual environment setup and testing towards the bottom of the page.
+If you might want to become a professional data scientist, it’s important to take a little time to “set yourself up for success” by installing and learning to use the right tools on your computer. If you already have Git and Anaconda installed, feel free to jump down to the cloning, virtual environment setup and testing towards the bottom of the page.
 
 ## Objectives
 You will be able to:
@@ -12,8 +10,8 @@ You will be able to:
 
 ## What tools do professional data scientists use?
 * **Python** - There are many languages that can be used for data science, but these days most data scientists are using Python to write their code.
-* **Jupyter Notebook** - Most of those data scientists use Jupyter Notebook for writing their * Python - a tool that allows you to mix comments in-between your code snippets so you can document and share your thinking process and make it easier for others to review, replicate and expand on your work.
-* **Anaconda** - Anaconda is one of the most popular way for data scientists to install Python and Jupyter notebook on their computers. It also provides package management and virtual environments so you can get all the latest data science tools running like NumPy, SciPy and Tensorflow, and so you can use different versions of python and your packages for different projects without them conflicting with each other.
+* **Jupyter Notebook** - Most of those data scientists use Jupyter Notebook for writing their Python. Jupyter Notebook is a tool that allows you to mix comments in-between your code snippets so you can document and share your thinking process and make it easier for others to review, replicate and expand on your work. It's also what we're using for almost all of our lessons in this course!
+* **Anaconda** - Anaconda is one of the most popular way for data scientists to install Python and Jupyter Notebook on their computers. It also provides package management and virtual environments so you can get all the latest data science tools running like NumPy, SciPy and Tensorflow, and so you can use different versions of Python and your packages for different projects without them conflicting with each other.
 * **Git** - Git is a version control system. It’s a way of keeping track of all the changes made across your project. Think of it like “track changes” in Word - but with the ability to track changes across multiple documents. At Flatiron School, we use git to keep track of all of the lessons we create and all the changes we make to them.
 * **GitHub** - GitHub is a website where data scientists (and programmers) can save their work in case their computer breaks, and share it with their team or the world! At Flatiron School, we store all of our lessons on GitHub.
 
@@ -275,13 +273,13 @@ If you’re on a windows machine, select “Anaconda Prompt” from either the s
 
 Let’s type `pwd` to “print the working directory. It should be somewhere you are OK downloading files to. If not, feel free to use the “cd” command to change directory to one you’d like to work from.
 
-Then type (or better still, cut and paste) `git clone https://github.com/learn-co-curriculum/setting-up-a-professional-data-science-environment`
+Then type (or better still, cut and paste) `git clone https://github.com/learn-co-curriculum/dsc-1-01-05-setting-up-environment`
 
-This will create a new subdirectory called setting-up-a-professional-data-science-environment which will contain a copy of all of the files from this repository.
+This will create a new subdirectory called dsc-1-01-05-setting-up-environment which will contain a copy of all of the files from this repository.
 
 ## Setting Up Virtual Environments
 
-As you do data science projects, you will spend a lot of your time using pre-written libraries to speed up your development. Examples include NumPy, Pandas and scikit-learn. As you work on different projects, you may also find that you end up using different versions of different libraries for different projects. The most common versioning issue is that some projects will run in Python 2 whereas others will run in Python 3, but you may also find that different projects depend on different versions of libraries like tensorflow.
+As you do data science projects, you will spend a lot of your time using pre-written libraries to speed up your development. Examples include NumPy, Pandas and scikit-learn. As you work on different projects, you may also find that you end up using different versions of different libraries for different projects. The most common versioning issue is that some projects will run in Python 2 whereas others will run in Python 3, but you may also find that different projects depend on different versions of libraries like Tensorflow.
 
 Occasionally, code that works in an old version of a library won’t work in a newer version. So if you open up a new project and install the dependencies, it’s possible that your old project won’t work any more.
 
@@ -293,7 +291,7 @@ To use a new virtual environment, there are two steps you need to complete. The 
 
 If you want to learn more about conda environments, have a look at the [documentation](https://conda.io/docs/user-guide/tasks/manage-environments.html), otherwise, lets give this a try.
 
-You need to start by navigating into the root of this project folder, so you’re going to want to type `cd  setting-up-a-professional-data-science-environment` in your terminal.
+You need to start by navigating into the root of this project folder, so you’re going to want to type `cd  dsc-1-01-05-setting-up-environment` in your terminal.
 
 Then to create the environment, on a mac, type `conda env create -f environment.yml`. On windows, type `conda env create -f windows.yml`. Depending on the speed of your computer and your internet connection it may take up to five minutes for this to complete. While it does you should see output similar to that displayed below start to appear in your terminal.
 
