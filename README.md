@@ -275,7 +275,7 @@ Let’s type `pwd` to “print the working directory. It should be somewhere you
 
 Then type (or better still, cut and paste) `git clone https://github.com/learn-co-curriculum/dsc-1-01-05-setting-up-environment`
 
-*In Windows, in git bash, to paste from the clipboard the shortcut should be `ctctrl-shift-insert`*
+*In Windows, in git bash, to paste from the clipboard the shortcut should be `ctrl-shift-insert`*
 
 This will create a new subdirectory called dsc-1-01-05-setting-up-environment which will contain a copy of all of the files from this repository. Go into that directory by typing `cd dsc-1-01-05-setting-up-environment` (after typing `cd dsc` you should be able to hit the tab key to "tab complete" so you don't need to type the whole directory name. That should work on both Windows and Macs.
 
