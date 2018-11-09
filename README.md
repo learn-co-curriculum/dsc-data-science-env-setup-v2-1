@@ -305,6 +305,17 @@ Next, try activating the environment. Whether you're on a Mac or using git bash 
 
 To confirm that it worked, type `conda info --envs` and confirm that the output in the terminal ends with /learn-env - e.g. *  /Users/peterbell/anaconda3/envs/learn-env
 
+## Configuring your Kernel
+
+Jupyter Notebooks run "kernels" - the computational engine used for executing your code. It's important to be running the right kernel within your notebook, otherwise you may get errors stating that you don't have a particular package or have the wrong version of it or even complaints about the version of Python you're running (some packages that work with Python 3.6.6 don't currently support Python 3.7, for example).
+
+It is essential to run (`source`) `activate learn-env` every time you start a new terminal window that you are going to use to either run a Jupyter Notebook or your tests. If you don't do this you **will** get errors, so please check this first. If you are not sure whether you have activated the environment, in the terminal type `conda list -f obscure` and it should show you that you have v1.0.1 of the "obscure" package. If it doesn't show that, (re)run (`source`) `activate learn-env`.
+
+However, there is one more step you need to perform. Firstly you need to ensure your terminal is running the learn-env virtual environment so you have the necessary packages. Then you need to go into your Jupyter Notebook and when viewing a notebook, click on "Kernel" in the top bar, then "Change Kernel" and then pick the learn-env kernel. You must make sure you're running the learn-env kernel whenever you're working in a Jupyter Notebook.
+
+If for any reason you don't see the learn-env option in the drop down list of kernels, exit the notebook in the browser, close down the notebook server, and in the terminal type `python -m ipykernel install --user --name=learn-env` - that will add the learn-env to your list of kernels and when you restart the Jupyter Notebook server and then open a notebook, you'll be able to select the learn-env option from the list of kernels.
+
+
 ## Running Tests
 
 There are lots of ways to use automated tests to improve your projects. If you’re writing some code and you want to make sure that it behaves as expected, it often makes sense to write tests (a) to make sure that it works the way you think it should and (b) to ensure that you don’t break it as you make changes to your code over time. It also allows you to start with the most important use cases and then explore and document edge cases over time.
