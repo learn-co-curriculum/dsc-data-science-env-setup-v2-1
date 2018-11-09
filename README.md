@@ -305,6 +305,22 @@ Next, try activating the environment. Whether you're on a Mac or using git bash 
 
 To confirm that it worked, type `conda info --envs` and confirm that the output in the terminal ends with /learn-env - e.g. *  /Users/peterbell/anaconda3/envs/learn-env
 
+
+## Updating your Virtual Environment
+
+Every so often we create new versions of the virtual environment and we'll ask you to update your virtual environment. To do that, download the latest version of this repository with the latest changes. Then go into a terminal window and:
+```
+source activate base # To make sure you're not in the learn-env environment
+conda remove -n learn-env --all # To get rid of the enviroment
+conda env list # Make sure it doesn't list learn-env - if it does, try the last step again
+# Then to re-create the environment from the latest environment file
+# On a Mac
+conda env create -f environment.yml
+# Or in Windows a Mac
+conda env create -f windows.yml
+
+```
+
 ## Configuring your Kernel
 
 Jupyter Notebooks run "kernels" - the computational engine used for executing your code. It's important to be running the right kernel within your notebook, otherwise you may get errors stating that you don't have a particular package or have the wrong version of it or even complaints about the version of Python you're running (some packages that work with Python 3.6.6 don't currently support Python 3.7, for example).
