@@ -330,7 +330,7 @@ It is essential to run (`source`) `activate learn-env` every time you start a ne
 
 However, there is one more step you need to perform. Firstly you need to ensure your terminal is running the learn-env virtual environment so you have the necessary packages. Then you need to go into your Jupyter Notebook and when viewing a notebook, click on "Kernel" in the top bar, then "Change Kernel" and then pick the learn-env kernel. You must make sure you're running the learn-env kernel whenever you're working in a Jupyter Notebook.
 
-![screen-jet](//Users/eli/Desktop/WeWork/Module1_DataExploration/dsc-1-01-05-setting-up-environment/learn_env.jpg)
+![screen-jet](learn_env.jpg)
 
 If for any reason you don't see the learn-env option in the drop down list of kernels, exit the notebook in the browser, close down the notebook server, and in the terminal type `python -m ipykernel install --user --name=learn-env` - that will add the learn-env to your list of kernels and when you restart the Jupyter Notebook server and then open a notebook, you'll be able to select the learn-env option from the list of kernels.
 
