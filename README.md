@@ -331,36 +331,6 @@ However, there is one more step you need to perform. Firstly you need to ensure 
 
 If for any reason you don't see the learn-env option in the drop down list of kernels, exit the notebook in the browser, close down the notebook server, and in the terminal type `python -m ipykernel install --user --name=learn-env` - that will add the learn-env to your list of kernels and when you restart the Jupyter Notebook server and then open a notebook, you'll be able to select the learn-env option from the list of kernels.
 
-
-## Running Tests
-
-There are lots of ways to use automated tests to improve your projects. If you’re writing some code and you want to make sure that it behaves as expected, it often makes sense to write tests (a) to make sure that it works the way you think it should and (b) to ensure that you don’t break it as you make changes to your code over time. It also allows you to start with the most important use cases and then explore and document edge cases over time.
-
-At Flatiron, we also use tests to provide students feedback on some of the labs we provide them. Often we’ll write automated tests for labs, so students can run the tests to see whether their code is working the way we expected it to, and perhaps even to get some hints on what they need to fix or change in their code.
-
-There are a number of test frameworks in Python, all of which are designed to make it easier to write tests. We have standardized on [Pytest](https://pytest.org/), which currently appears to be the most popular framework being used by data scientists.
-
-To run the tests, please run the command `python -m pytest -x`
-
-There are a couple of things going on here. It's really important to run the tests using the `python -m pytest` as it works slightly differently than just running `pytest`, and by adding the `-x` option, you're asking pytest to stop after the first failure, so were you to get multiple test failures you could focus on one at a time.
-
-The expected output should look something like the image below. In short, the first two tests should pass and the third one should fail with the message "This test *should* fail - if it doesn't, something is wrong!".
-
-![screen-48](http://curriculum-content.s3.amazonaws.com/data-science/screen-48.png)
-
-## Troubleshooting
-* If you get a message - ModuleNotFound ipynb, firstly make sure you activated the conda environment - run `conda info --envs` and make sure there is a star next to the learn-env which denotes that you're running that environment. If not, try re-running the command to activate the environment. If you are in the right environment and still get that error, try running `pip install ipynb`. It may fix the issue.
-* If you get a failure running the test "test_conda_environment_activated", after checking that you have activated the conda environment, try running `pip install obscure`. Again it should fix the issue with the test.
-
-# Testing Your Installation
-
-The cell below is used by our tests to make sure they're working correctly.
-
-
-```python
-x = 4
-```
-
 ## Summary
 
 Congratulations! If you've gotten this far and everything has worked, you have a great baseline setup for working as a professional data scientist!
