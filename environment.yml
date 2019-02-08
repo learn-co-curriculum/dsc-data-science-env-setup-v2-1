@@ -77,7 +77,6 @@ dependencies:
   - nltk=3.4
   - gensim=3.4.0
   - h5py=2.9.0
-  - pil=1.1.7
   - pyspark=2.4.0
   - patsy=0.5.1
   - pydotplus=2.0.2
