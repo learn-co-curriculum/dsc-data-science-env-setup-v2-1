@@ -20,11 +20,11 @@ dependencies:
   - jedi=0.12.1
   - jsonschema=2.6.0
   - jupyter_core=4.4.0
-  - matplotlib
+  - matplotlib=3.0.2
   - mkl=2018.0.3
   - mkl_fft=1.0.4
   - mkl_random=1.0.1
-  - nb_conda
+  - nb_conda=2.2.1
   - nbformat=4.4.0
   - numpy=1.15.0
   - numpy-base=1.15.0
@@ -45,9 +45,9 @@ dependencies:
   - pytz=2018.5
   - requests=2.19.1
   - retrying=1.3.3
-  - scikit-learn
-  - scipy
-  - seaborn
+  - scikit-learn=0.20.2
+  - scipy=1.1.0
+  - seaborn=0.9.0
   - setuptools=40.0.0
   - simplegeneric=0.8.1
   - six=1.11.0
