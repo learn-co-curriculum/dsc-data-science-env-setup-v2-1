@@ -34,7 +34,7 @@ dependencies:
   - nbformat=4.4.0
   - ncurses=6.1
   - numpy
-  - numpy-base=1.15.0
+  - numpy-base
   - openssl=1.0.2p
   - pandas=0.23.4
   - parso=0.3.1
