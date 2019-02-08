@@ -33,7 +33,7 @@ dependencies:
   - nb_conda
   - nbformat=4.4.0
   - ncurses=6.1
-  - numpy=1.15.0
+  - numpy
   - numpy-base=1.15.0
   - openssl=1.0.2p
   - pandas=0.23.4
