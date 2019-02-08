@@ -69,7 +69,22 @@ dependencies:
   - xlrd=1.1.0
   - xz=5.2.4
   - zlib=1.2.11
-  - py-xgboost==0.72
+  - py-xgboost=0.72
+  - tqdm=4.30.0
+  - statsmodels=0.9.0
+  - cvxpy=1.0.14
+  - graphviz=2.40.1
+  - beautifulsoup4=4.7.1
+  - folium=0.7.0
+  - networkx=2.2
+  - nltk=3.4
+  - gensim=3.4.0
+  - h5py=2.9.0
+  - pil=1.1.7
+  - pyspark=2.4.0
+  - patsy=0.5.1
+  - pydotplus=2.0.2
+  - imbalanced-learn=0.4.3
   - pip:
     - ipynb==0.5.1
     - pytest==3.7
