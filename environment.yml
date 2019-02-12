@@ -26,15 +26,15 @@ dependencies:
   - libedit=3.1.20170329
   - libffi=3.2.1
   - libgfortran=3.0.1
-  - matplotlib
-  - mkl=2018.0.3
-  - mkl_fft=1.0.4
-  - mkl_random=1.0.1
+  - matplotlib=3.0.2
+  - mkl
+  - mkl_fft
+  - mkl_random
   - nb_conda
   - nbformat=4.4.0
   - ncurses=6.1
-  - numpy=1.15.0
-  - numpy-base=1.15.0
+  - numpy
+  - numpy-base
   - openssl=1.0.2p
   - pandas=0.23.4
   - parso=0.3.1
@@ -54,9 +54,9 @@ dependencies:
   - readline=7.0
   - requests=2.19.1
   - retrying=1.3.3
-  - scikit-learn
-  - scipy
-  - seaborn
+  - scikit-learn=0.20.2
+  - scipy=1.1.0
+  - seaborn=0.9.0
   - setuptools=40.0.0
   - simplegeneric=0.8.1
   - six=1.11.0
@@ -69,11 +69,24 @@ dependencies:
   - xlrd=1.1.0
   - xz=5.2.4
   - zlib=1.2.11
-  - py-xgboost==0.72
+  - py-xgboost=0.72
+  - tqdm
+  - statsmodels=0.9.0
+  - beautifulsoup4=4.7.1
+  - networkx=2.2
+  - nltk=3.4
+  - gensim=3.4.0
+  - h5py=2.9.0
+  - pyspark=2.4.0
+  - patsy=0.5.1
+  - pydotplus=2.0.2
   - pip:
     - ipynb==0.5.1
     - pytest==3.7
     - tensorflow==1.6
     - keras==2.2.1
     - obscure==1.0.1
+    - folium
+    - imbalanced-learn
+    - graphviz
 prefix: /anaconda3/envs/learn-env
