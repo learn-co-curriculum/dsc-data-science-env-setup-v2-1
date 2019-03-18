@@ -8,19 +8,19 @@ If you might want to become a professional data scientist, it’s important to t
 You will be able to:
 * Install a professional data science environment
 
-## What tools do professional data scientists use?
+## What Tools do Professional Data Scientists Use?
 * **Python** - There are many languages that can be used for data science, but these days most data scientists are using Python to write their code.
 * **Jupyter Notebook** - Most of those data scientists use Jupyter Notebook for writing their Python. Jupyter Notebook is a tool that allows you to mix comments in-between your code snippets so you can document and share your thinking process and make it easier for others to review, replicate and expand on your work. It's also what we're using for almost all of our lessons in this course!
-* **Anaconda** - Anaconda is one of the most popular way for data scientists to install Python and Jupyter Notebook on their computers. It also provides package management and virtual environments so you can get all the latest data science tools running like NumPy, SciPy and Tensorflow, and so you can use different versions of Python and your packages for different projects without them conflicting with each other.
-* **Git** - Git is a version control system. It’s a way of keeping track of all the changes made across your project. Think of it like “track changes” in Word - but with the ability to track changes across multiple documents. At Flatiron School, we use git to keep track of all of the lessons we create and all the changes we make to them.
+* **Anaconda** - Anaconda is one of the most popular ways for data scientists to install Python and Jupyter Notebook on their computers. It also provides package management and virtual environments so you can get all the latest data science tools running like NumPy, SciPy, and Tensorflow, and so you can use different versions of Python and your packages for different projects without them conflicting with each other.
+* **Git** - Git is a version control system. It’s a way of keeping track of all the changes made across your project. Think of it like “track changes” in Word - but with the ability to track changes across multiple documents. At Flatiron School, we use Git to keep track of all of the lessons we create and all the changes we make to them.
 * **GitHub** - GitHub is a website where data scientists (and programmers) can save their work in case their computer breaks, and share it with their team or the world! At Flatiron School, we store all of our lessons on GitHub.
 
 It’s going to take us a few minutes to get this all installed, but once we do, not only will you be set-up for working through the course, but you’ll also have a professional data science setup on your computer for any future courses or projects you want to work on!
 
 ## Computer Prerequisites
-There are many amazing computing devices available these days, but not all of them will allow you to do data science. We love smart phones, flip phones, chromebooks, tablets (including iPads), game boys, nintendo switches, roku’s and arduino’s. You’re not going to be able to complete this course on any of those devices - sorry.
+There are many amazing computing devices available these days, but not all of them will allow you to do data science. We love smartphones, flip phones, Chromebooks, tablets (including iPads), game boys, Nintendo switches, roku’s and arduino’s. You’re not going to be able to complete this course on any of those devices - sorry.
 
-You’re going to need a computer (laptop or desktop). It should be running a recent (last 3-4 years) version of MacOS, Windows or Linux, and ideally it should have 8Gb of RAM and at least 20Gb free hard drive space. More information [here](https://flatironschool.com/wp-content/uploads/Student-Facing-Computer-Requirements.pdf):
+You’re going to need a computer (laptop or desktop). It should be running a recent (last 3-4 years) version of MacOS, Windows or Linux, and ideally, it should have 8Gb of RAM and at least 20Gb free hard drive space. More information [here](https://flatironschool.com/wp-content/uploads/Student-Facing-Computer-Requirements.pdf):
 
 Assuming you have a computer that meets the requirements, let’s start by getting git Installed.
 
@@ -60,7 +60,7 @@ For extra options, enable the file system caching and the git credential manager
 
 ![screen-6](http://curriculum-content.s3.amazonaws.com/data-science/screen-6.png)
 
-And then wait while git is installed onto your computer.
+And then wait while Git is installed onto your computer.
 
 ![screen-7](http://curriculum-content.s3.amazonaws.com/data-science/screen-7.png)
 
@@ -69,29 +69,32 @@ Finally, click finish to complete setup
 ![screen-8](http://curriculum-content.s3.amazonaws.com/data-science/screen-8.png)
 
 #### MacOS
-If you are comfortable with the command line and have installed [homebrew](https://brew.sh/), you should install git by running the command `brew install git` in a terminal window.  
+If you are comfortable with the command line and have installed [homebrew](https://brew.sh/), you should install Git by running the command `brew install git` in a terminal window.  
 
 If you have no idea what the last paragraph meant, just go [here](https://git-scm.com/download/mac). Then double click on the downloaded dmg file and it will open a small finder window looking something like this (the exact name and version will change over time):
 
-![screen-10](http://curriculum-content.s3.amazonaws.com/data-science/screen-10.png)
+
+<img src='http://curriculum-content.s3.amazonaws.com/data-science/screen-10.png' width="750">
 
 Double click on the .pkg file to run it. When you try to do that you might get a security warning pop up that looks something like this:
 
-![screen-11](http://curriculum-content.s3.amazonaws.com/data-science/screen-11.png)
 
-If that happens, just click on the apple at the top left of the screen, select “system preferences” from the drop down menu. Then select “Security and Privacy”, select the “General” tag, click on the lock to make changes at the bottom of the window (you’ll have to enter your password). Below the “Allow apps downloaded from” option, you should see a message stating that an app was blocked from opening. (If you don’t see this message, double click on the .pkg file again and then look back at the Security & Privacy screen and it should pop up).  Click the “open anyway” button.
+<img src='http://curriculum-content.s3.amazonaws.com/data-science/screen-11.png' width="550">
+
+If that happens, just click on the apple at the top left of the screen, select “system preferences” from the drop-down menu. Then select “Security and Privacy”, select the “General” tag, click on the lock to make changes at the bottom of the window (you’ll have to enter your password). Below the “Allow apps downloaded from” option, you should see a message stating that an app was blocked from opening. (If you don’t see this message, double click on the .pkg file again and then look back at the Security & Privacy screen and it should pop up).  Click the “open anyway” button.
 
 You should then see a message confirming whether you really want to open the app.
 
-![screen-12](http://curriculum-content.s3.amazonaws.com/data-science/screen-12.png)
+<img src='http://curriculum-content.s3.amazonaws.com/data-science/screen-12.png' width="550">
 
 Click on the “open” button. You should then see an installer screen.
 
-![screen-13](http://curriculum-content.s3.amazonaws.com/data-science/screen-13.png)
+<img src='http://curriculum-content.s3.amazonaws.com/data-science/screen-13.png' width="650">
 
 Click “continue”, then “install”, enter your password when prompted, and when the installation is complete, click the “close” button.
 
-![screen-14](http://curriculum-content.s3.amazonaws.com/data-science/screen-14.png)
+<img src='http://curriculum-content.s3.amazonaws.com/data-science/screen-14.png' width="650">
+
 
 ## Confirming your git installation (all OS’s)
 
@@ -134,7 +137,7 @@ Click “next”, then “I agree” to accept the license, and you can install 
 
 ![screen-19](http://curriculum-content.s3.amazonaws.com/data-science/screen-19.png)
 
-On the next screen, make sure to check the "Add Anaconda to my PATH environment" check box. It will inform you that it's not recommended, but this is required to be able to access Anaconda from the command line and the final instructions in this guide won't work unless you check this box. Then click “install”.
+On the next screen, make sure to check the "Add Anaconda to my PATH environment" checkbox. It will inform you that it's not recommended, but this is required to be able to access Anaconda from the command line and the final instructions in this guide won't work unless you check this box. Then click “install”.
 
 ![screen-20](http://curriculum-content.s3.amazonaws.com/data-science/screen-00.png)
 
@@ -175,47 +178,48 @@ If you don’t see the file in your browser, you can also just open up the finde
 
 You’ll be informed that the package will run a program to see whether the software can be installed. Click “continue”.
 
-![screen-29](http://curriculum-content.s3.amazonaws.com/data-science/screen-29.png)
+<img src='http://curriculum-content.s3.amazonaws.com/data-science/screen-29.png' width="600">
 
 You’ll then see a wizard that will run you through the installation process. Click continue on the first screen.
 
-![screen-30](http://curriculum-content.s3.amazonaws.com/data-science/screen-30.png)
+<img src='http://curriculum-content.s3.amazonaws.com/data-science/screen-30.png' width="600">
 
 Then look at the read me, and click “continue” again.
 
-![screen-31](http://curriculum-content.s3.amazonaws.com/data-science/screen-31.png)
+<img src='http://curriculum-content.s3.amazonaws.com/data-science/screen-31.png' width="600">
 
 You’ll then need to accept the license. Start by clicking “continue”
 
-![screen-32](http://curriculum-content.s3.amazonaws.com/data-science/screen-32.png)
+<img src='http://curriculum-content.s3.amazonaws.com/data-science/screen-32.png' width="600">
 
 And then click on “agree” in the dialog that comes up and asks you to accept the license.
 
-![screen-33](http://curriculum-content.s3.amazonaws.com/data-science/screen-33.png)
+<img src='http://curriculum-content.s3.amazonaws.com/data-science/screen-33.png' width="600">
 
 Then click on “install” to install the software.
 
-![screen-34](http://curriculum-content.s3.amazonaws.com/data-science/screen-34.png)
+<img src='http://curriculum-content.s3.amazonaws.com/data-science/screen-34.png' width="600">
 
 And you’ll have to enter an administrative username and password for your computer to finally install the software.
 
-![screen-35](http://curriculum-content.s3.amazonaws.com/data-science/screen-35.png)
+<img src='http://curriculum-content.s3.amazonaws.com/data-science/screen-35.png' width="600">
 
 The wizard will let you know next that it’s preparing the install, and then it’ll take a couple of minutes to install all of the necessary software.
 
-![screen-36](http://curriculum-content.s3.amazonaws.com/data-science/screen-36.png)
+<img src='http://curriculum-content.s3.amazonaws.com/data-science/screen-36.png' width="600">
 
 You’ll be given the option to install Microsoft VSCode. For now, you can skip that option by clicking “continue”.
 
-![screen-37](http://curriculum-content.s3.amazonaws.com/data-science/screen-37.png)
+<img src='http://curriculum-content.s3.amazonaws.com/data-science/screen-37.png' width="600">
 
 You should then see a final window informing you that the software was installed successfully. Click close to finish the installation.
 
-![screen-38](http://curriculum-content.s3.amazonaws.com/data-science/screen-38.png)
+<img src='http://curriculum-content.s3.amazonaws.com/data-science/screen-38.png' width="600">
 
 If you’re asked whether you’d like to move the installer to trash, click the “Move to trash” button.
 
-![screen-39](http://curriculum-content.s3.amazonaws.com/data-science/screen-39.png)
+<img src='http://curriculum-content.s3.amazonaws.com/data-science/screen-39.png' width="600">
+
 
 ## Testing your installation
 
@@ -227,23 +231,23 @@ The Anaconda Navigator is one of the ways you’ll be able to run Jupyter Notebo
 
 ![screen-40](http://curriculum-content.s3.amazonaws.com/data-science/screen-40.png)
 
-On a mac you’ll see a terminal window pop up.
+On a Mac, you’ll see a terminal window pop up.
 
-![screen-41](http://curriculum-content.s3.amazonaws.com/data-science/screen-41.png)
+<img src='http://curriculum-content.s3.amazonaws.com/data-science/screen-41.png' width="600">
 
-On both Windows and a Mac you’ll see a window in your web browser that allows you to open existing Jupyter notebooks or create a new one.
+On both Windows and a Mac, you’ll see a window in your web browser that allows you to open existing Jupyter notebooks or create a new one.
 
-![screen-42](http://curriculum-content.s3.amazonaws.com/data-science/screen-42.png)
+<img src='http://curriculum-content.s3.amazonaws.com/data-science/screen-42.png' width="1000">
 
 Click on the “New” button in the top right corner.
 
 ![screen-43](http://curriculum-content.s3.amazonaws.com/data-science/screen-44.png)
 
-And select “Python 3” from the drop down list.
+And select “Python 3” from the drop-down list.
 
 When you do, you’ll see a new notebook in your browser window that looks something like this:
 
-![screen-44](http://curriculum-content.s3.amazonaws.com/data-science/screen-43.png)
+<img src='http://curriculum-content.s3.amazonaws.com/data-science/screen-43.png' width="650">
 
 To make sure it’s working, click in the cell and type the following:
 
@@ -254,13 +258,13 @@ print(sys.version)
 
 Then hold down the shift key and hit enter to run the code in the cell. You should see an output something like this.
 
-![screen-45](http://curriculum-content.s3.amazonaws.com/data-science/screen-45.png)
+<img src='http://curriculum-content.s3.amazonaws.com/data-science/screen-45.png' width="600">
 
 Don’t worry if the version number or date is slightly different. If you get a similar output (something that isn’t an error message), congratulations! You’ve got Anaconda, Python and the Jupyter notebook installed successfully!
 
-To shut down Jupyter notebook, just close the tabs in your browser containing the notebook and the list of noteboks. On a mac you should also click on the terminal window and hit “ctrl-C” to close the notebook.
+To shut down Jupyter notebook, just close the tabs in your browser containing the notebook and the list of notebooks. On a Mac, you should also click on the terminal window and hit “ctrl-C” to close the notebook.
 
-![screen-46](http://curriculum-content.s3.amazonaws.com/data-science/screen-46.png)
+<img src='http://curriculum-content.s3.amazonaws.com/data-science/screen-46.png' width="600">
 
 
 You’ll then have to hit “y” and return to confirm that you want to close down Jupyter notebook.
@@ -283,25 +287,25 @@ This will create a new subdirectory called dsc-1-01-05-setting-up-environment wh
 
 As you do data science projects, you will spend a lot of your time using pre-written libraries to speed up your development. Examples include NumPy, Pandas and scikit-learn. As you work on different projects, you may also find that you end up using different versions of different libraries for different projects. The most common versioning issue is that some projects will run in Python 2 whereas others will run in Python 3, but you may also find that different projects depend on different versions of libraries like Tensorflow.
 
-Occasionally, code that works in an old version of a library won’t work in a newer version. So if you open up a new project and install the dependencies, it’s possible that your old project won’t work any more.
+Occasionally, code that works in an old version of a library won’t work in a newer version. So if you open up a new project and install the dependencies, it’s possible that your old project won’t work anymore.
 
 To avoid that problem, a best practice is to use “virtual environments”. Virtual environments allow you to have different versions of Python and different versions of the various libraries you use, so you can install a new version of a library for one project but still use the old version for another project. It’s almost as if you have multiple computers that you can swap between, each having a different setup and configuration, just by running a couple of commands.
 
-There is a build in virtual environment feature in Python, but we’re going to use the more flexible virtual environments provided by conda as part of the Anaconda distribution you installed.
+There is a build in virtual environment feature in Python, but we’re going to use the more flexible virtual environments provided by Conda as part of the Anaconda distribution you installed.
 
 To use a new virtual environment, there are two steps you need to complete. The first step is to create the virtual environment. That may take a couple of minutes as your computer has to download the necessary version of Python and all of the libraries that you want to be able to use in that environment. The next step then is to “use” the virtual environment by activating it.
 
-If you want to learn more about conda environments, have a look at the [documentation](https://conda.io/docs/user-guide/tasks/manage-environments.html), otherwise, lets give this a try.
+If you want to learn more about Conda environments, have a look at the [documentation](https://conda.io/docs/user-guide/tasks/manage-environments.html), otherwise, let’s give this a try.
 
 You need to start by navigating into the root of this project folder, so you’re going to want to type `cd  dsc-1-01-05-setting-up-environment` in your terminal if you didn't already.
 
 Then to create the environment, on a mac, type `conda env create -f environment.yml`. On windows, type `conda env create -f windows.yml`. Depending on the speed of your computer and your internet connection it may take up to five minutes for this to complete. While it does you should see output similar to that displayed below start to appear in your terminal.
 
-![screen-47](http://curriculum-content.s3.amazonaws.com/data-science/screen-47.png)
+<img src='http://curriculum-content.s3.amazonaws.com/data-science/screen-47.png' width="750">
 
-If you see a message that states “WARNING: A newer version of conda exists”, run `conda update -n base conda` and then try again to create the environment using `conda env create -f environment.yml`.
+If you see a message that states “WARNING: A newer version of Conda exists”, run `conda update -n base conda` and then try again to create the environment using `conda env create -f environment.yml`.
 
-Next, try activating the environment. Whether you're on a Mac or using git bash on a windows machine, type `source activate learn-env` (if you have an issue with running git bash, the command to activate conda within the conda shell on windows is `activate learn-env`).
+Next, try activating the environment. Whether you're on a Mac or using git bash on a windows machine, type `source activate learn-env` (if you have an issue with running git bash, the command to activate Conda within the Conda shell on windows is `activate learn-env`).
 
 To confirm that it worked, type `conda info --envs` and confirm that the output in the terminal ends with /learn-env - e.g. *  /Users/peterbell/anaconda3/envs/learn-env
 
@@ -311,7 +315,7 @@ To confirm that it worked, type `conda info --envs` and confirm that the output 
 Every so often we create new versions of the virtual environment and we'll ask you to update your virtual environment. To do that, download the latest version of this repository with the latest changes. Then go into a terminal window and:
 ```
 source activate base # To make sure you're not in the learn-env environment
-conda remove -n learn-env --all # To get rid of the enviroment
+conda remove -n learn-env --all # To get rid of the environment
 conda env list # Make sure it doesn't list learn-env - if it does, try the last step again
 # Then to re-create the environment from the latest environment file
 # On a Mac
@@ -325,12 +329,14 @@ conda env create -f windows.yml
 
 Jupyter Notebooks run "kernels" - the computational engine used for executing your code. It's important to be running the right kernel within your notebook, otherwise you may get errors stating that you don't have a particular package or have the wrong version of it or even complaints about the version of Python you're running (some packages that work with Python 3.6.6 don't currently support Python 3.7, for example).
 
-It is essential to run `source activate learn-env` (if you have an issue with running git bash, the command to activate conda within the conda shell on windows is `activate learn-env`) every time you start a new terminal window that you are going to use to either run a Jupyter Notebook or your tests. If you don't do this you **will** get errors, so please check this first. If you are not sure whether you have activated the environment, in the terminal type `conda list -f obscure` and it should show you that you have v1.0.1 of the "obscure" package. If it doesn't show that, (re)run (`source`) `activate learn-env`.
+It is essential to run `source activate learn-env` (if you have an issue with running git bash, the command to activate Conda within the Conda shell on windows is `activate learn-env`) every time you start a new terminal window that you are going to use to either run a Jupyter Notebook or your tests. If you don't do this you **will** get errors, so please check this first. If you are not sure whether you have activated the environment, in the terminal type `conda list -f obscure` and it should show you that you have v1.0.1 of the "obscure" package. If it doesn't show that, (re)run (`source`) `activate learn-env`.
 
 However, there is one more step you need to perform. Firstly you need to ensure your terminal is running the learn-env virtual environment so you have the necessary packages. Then you need to go into your Jupyter Notebook and when viewing a notebook, click on "Kernel" in the top bar, then "Change Kernel" and then pick the learn-env kernel. You must make sure you're running the learn-env kernel whenever you're working in a Jupyter Notebook.
 
-If for any reason you don't see the learn-env option in the drop down list of kernels, exit the notebook in the browser, close down the notebook server, and in the terminal type `python -m ipykernel install --user --name=learn-env` - that will add the learn-env to your list of kernels and when you restart the Jupyter Notebook server and then open a notebook, you'll be able to select the learn-env option from the list of kernels.
+If for any reason you don't see the learn-env option in the drop-down list of kernels, exit the notebook in the browser, close down the notebook server, and in the terminal type `python -m ipykernel install --user --name=learn-env` - that will add the learn-env to your list of kernels and when you restart the Jupyter Notebook server and then open a notebook, you'll be able to select the learn-env option from the list of kernels.
 
 ## Summary
 
 Congratulations! If you've gotten this far and everything has worked, you have a great baseline setup for working as a professional data scientist!
+
+
