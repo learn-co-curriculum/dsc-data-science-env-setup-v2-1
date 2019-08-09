@@ -247,7 +247,7 @@ And select “Python 3” from the drop-down list.
 
 When you do, you’ll see a new notebook in your browser window that looks something like this:
 
-<img src='http://curriculum-content.s3.amazonaws.com/data-science/screen-43.png' width="650">
+<img src='./images/new_notebook.png' width="650">
 
 To make sure it’s working, click in the cell and type the following:
 
@@ -255,6 +255,11 @@ To make sure it’s working, click in the cell and type the following:
 import sys
 print(sys.version)
 ```
+
+It should look like this:
+
+<img src='http://curriculum-content.s3.amazonaws.com/data-science/screen-43.png' width="650">
+
 
 Then hold down the shift key and hit enter to run the code in the cell. You should see an output something like this.
 
@@ -340,3 +345,8 @@ If for any reason you don't see the learn-env option in the drop-down list of ke
 Congratulations! If you've gotten this far and everything has worked, you have a great baseline setup for working as a professional data scientist!
 
 
+
+
+```python
+
+```
