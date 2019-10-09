@@ -153,6 +153,7 @@ dependencies:
     - markdown==3.0.1
     - more-itertools==5.0.0
     - obscure==1.0.1
+    - pillow==6.2.0
     - pluggy==0.8.1
     - protobuf==3.6.1
     - py==1.7.0
