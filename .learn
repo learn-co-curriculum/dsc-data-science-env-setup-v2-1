@@ -1,9 +1,6 @@
-tags: 
-- jupyter 
-- python 
+tags:
+- python
 
 languages: python 
-
-jupyter_notebook: true 
 
 resources: 0
