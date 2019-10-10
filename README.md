@@ -27,9 +27,11 @@ Assuming you have a computer that meets the requirements, let’s start by getti
 ## Installing Git
 For each tool, we’ll provide installation instructions for the two most common operating systems - Windows and MacOS.
 
-
-## Windows
+<details>
+<summary>Windows</summary>
 Go [here](https://git-scm.com/download/win). Then double click on the downloaded exe file. It may open a window asking if you want to allow this application to make changes to your device. Just click “yes”. It will then open the installer. Click “next” to accept the license, and when you “select components” on the next screen make sure to keep the “Windows explorer integration” options checked.
+
+It is strongly suggested that you select any options to install and use the "Git Bash" shell, it's generally included by default. In short, the Git Bash shell will allow students with either Windows or Mac computers to run the same set of commands.
 
 Note - if there are any differences in the options provided in the installer you download, just accept the defaults - they’ll probably be fine!
 
@@ -67,8 +69,10 @@ And then wait while Git is installed onto your computer.
 Finally, click finish to complete setup
 
 ![screen-8](http://curriculum-content.s3.amazonaws.com/data-science/screen-8.png)
+</details>
 
-#### MacOS
+<details>
+<summary>Mac</summary>
 If you are comfortable with the command line and have installed [homebrew](https://brew.sh/), you should install Git by running the command `brew install git` in a terminal window.  
 
 If you have no idea what the last paragraph meant, just go [here](https://git-scm.com/download/mac). Then double click on the downloaded dmg file and it will open a small finder window looking something like this (the exact name and version will change over time):
@@ -94,7 +98,7 @@ Click on the “open” button. You should then see an installer screen.
 Click “continue”, then “install”, enter your password when prompted, and when the installation is complete, click the “close” button.
 
 <img src='http://curriculum-content.s3.amazonaws.com/data-science/screen-14.png' width="650">
-
+</details>
 
 ## Confirming your git installation (all OS’s)
 
@@ -114,7 +118,8 @@ If it returns your email address, you’re set! If it returns nothing or display
 
 The easiest way to get set up with Python and Jupyter Notebook so you can start coding is to install the Anaconda distribution. Let’s go through the install instructions  for the two most common operating systems - Windows and MacOS.
 
-#### Windows
+<details>
+<summary>Windows</summary>
 Go [here](https://www.anaconda.com/download/#windows) and click on the “download” button for the Python 3.x (currently 3.6) version of Anaconda.
 
 ![screen-15](http://curriculum-content.s3.amazonaws.com/data-science/screen-15.png)
@@ -162,8 +167,9 @@ It’ll open up a browser window which you can just close down.
 ![screen-25](http://curriculum-content.s3.amazonaws.com/data-science/screen-25.png)
 
 And that’s the process of installing Anaconda. The next step is to test your installation.
+</details>
 
-#### Mac
+<details><summary>Mac</summary>
 Go [here](https://www.anaconda.com/download/#macos) and click on the “download” button for the Python 3.x (currently 3.6) version of Anaconda.
 
 ![screen-26](http://curriculum-content.s3.amazonaws.com/data-science/screen-26.png)
@@ -219,11 +225,17 @@ You should then see a final window informing you that the software was installed
 If you’re asked whether you’d like to move the installer to trash, click the “Move to trash” button.
 
 <img src='http://curriculum-content.s3.amazonaws.com/data-science/screen-39.png' width="600">
-
+</details>
 
 ## Testing your installation
 
-To test your installation, on Windows, click on Start and then Anaconda Navigator in the program list (or search for Anaconda in the search bar and select Anaconda Navigator). On a Mac, open up the finder, and in the Applications folder, double click on Anaconda-Navigator.
+<details><summary>Windows</summary>
+To test your installation, on Windows, click on Start and then Anaconda Navigator in the program list (or search for Anaconda in the search bar and select Anaconda Navigator).
+</details>
+
+<details><summary>Mac</summary>
+On a Mac, open up the finder, and in the Applications folder, double click on Anaconda-Navigator.
+</details>
 
 From now on, screenshots will be from a Mac, but we’ll highlight any material differences in the experience between the OS’s.
 
@@ -278,7 +290,10 @@ You’ll then have to hit “y” and return to confirm that you want to close d
 
 To finish this setup process, you’re going to need to download a copy of the files in this repository. To do that, you need to start by opening a terminal window.
 
-If you’re on a windows machine, select “git bash” from either the start menu or the search bar and it’ll open up a terminal (don’t use the default Windows terminal - it will not work for this). If you’re working on a mac, open the “Terminal” app in the “Utilities” folder within your “Applications” folder.
+
+If you’re on a Windows machine, select “Git Bash” from either the start menu or the search bar and it’ll open up a terminal (don’t use the default Windows terminal - it will not work for this). 
+
+If you’re working on a mac, open the “Terminal” app in the “Utilities” folder within your “Applications” folder.
 
 Let’s type `pwd` to “print the working directory. It should be somewhere you are OK downloading files to. If not, feel free to use the “cd” command to change directory to one you’d like to work from.
 
@@ -302,24 +317,35 @@ To use a new virtual environment, there are two steps you need to complete. The 
 
 If you want to learn more about Conda environments, have a look at the [documentation](https://conda.io/docs/user-guide/tasks/manage-environments.html), otherwise, let’s give this a try.
 
-You need to start by navigating into the root of this project folder, so you’re going to want to type `cd  dsc-data-science-env` in your terminal if you didn't already.
+You need to start by navigating into the root of this project folder, so you’re going to want to type `cd dsc-data-science-env` in your terminal if you didn't already.
 
 Then to create the environment, on a mac, type `conda env create -f environment.yml`. On windows, type `conda env create -f windows.yml`. Depending on the speed of your computer and your internet connection it may take up to five minutes for this to complete. While it does you should see output similar to that displayed below start to appear in your terminal.
 
 <img src='http://curriculum-content.s3.amazonaws.com/data-science/screen-47.png' width="750">
 
-If you see a message that states “WARNING: A newer version of Conda exists”, run `conda update -n base conda` and then try again to create the environment using `conda env create -f environment.yml`.
-
 Next, try activating the environment. Whether you're on a Mac or using git bash on a windows machine, type `conda activate learn-env` (if you have an issue with running git bash, the command to activate Conda within the Conda shell on windows is `activate learn-env`).
 
 To confirm that it worked, type `conda info --envs` and confirm that the output in the terminal ends with /learn-env - e.g. *  /Users/peterbell/anaconda3/envs/learn-env
 
+##### Troubleshooting
+If you see a message that states “WARNING: A newer version of Conda exists”, run `conda update -n base conda` and then try again to create the environment using `conda env create -f environment.yml`.
+
+If you see a message that states "file not found", double check that you are running this command from the directory that contains the .yml file. If you type `ls` you should see the .yml file. If you don't see it you likely forgot to run `cd dsc-data-science-env` to change into the right directory.
+
 ## Setting your Default Environment
 
-You have successfully created your virtual environment! To be sure that you are using the learn-env it's helpful to set it as your default environment so that you don't need to remember to manually switch to it every time you open terminal.
+You have successfully created your virtual environment! To be sure that you are using the learn-env it's helpful to set it as your default environment so that you don't need to remember to manually switch to it every time you open terminal. This step is suggested but not required.
 
-On a Mac, run `echo "conda activate learn-env" >> ~/.bash_profile` to add the configuration to your bash profile and then run `source ~/.bash_profile` to activate the changes you just made. 
+<details>
+<summary>Mac</summary>
+On a Mac, run `echo "conda activate learn-env" >> ~/.bash_profile` to add the configuration to your bash profile and then run `source ~/.bash_profile` to activate the changes you just made.
+</details>
 
+<details>
+<summary>Windows</summary>
+To follow these instructions on a Windows machine you must be using the Git Bash shell it was suggested to install above.
+Run touch `~/.bash_profile` to create a new file. Next, run `echo "conda activate learn-env" >> ~/.bash_profile` to add the configuration to your bash profile and then run `source ~/.bash_profile` to activate the changes you just made.
+</details>
 
 ## Updating your Virtual Environment
 
@@ -331,7 +357,7 @@ conda env list # Make sure it doesn't list learn-env - if it does, try the last 
 # Then to re-create the environment from the latest environment file
 # On a Mac
 conda env create -f environment.yml
-# Or in Windows a Mac
+# Or in Windows
 conda env create -f windows.yml
 
 ```
@@ -349,5 +375,3 @@ If for any reason you don't see the learn-env option in the drop-down list of ke
 ## Summary
 
 Congratulations! If you've gotten this far and everything has worked, you have a great baseline setup for working as a professional data scientist!
-
-
