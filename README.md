@@ -291,7 +291,7 @@ You’ll then have to hit “y” and return to confirm that you want to close d
 To finish this setup process, you’re going to need to download a copy of the files in this repository. To do that, you need to start by opening a terminal window.
 
 
-If you’re on a Windows machine, select “Git Bash” from either the start menu or the search bar and it’ll open up a terminal (don’t use the default Windows terminal - it will not work for this). 
+If you’re on a Windows machine, select “Git Bash” from either the start menu or the search bar and it’ll open up a terminal (don’t use the default Windows terminal - it will not work for this).
 
 If you’re working on a mac, open the “Terminal” app in the “Utilities” folder within your “Applications” folder.
 
@@ -327,7 +327,7 @@ Next, try activating the environment. Whether you're on a Mac or using git bash 
 
 To confirm that it worked, type `conda info --envs` and confirm that the output in the terminal ends with /learn-env - e.g. *  /Users/peterbell/anaconda3/envs/learn-env
 
-##### Troubleshooting
+#### Troubleshooting
 If you see a message that states “WARNING: A newer version of Conda exists”, run `conda update -n base conda` and then try again to create the environment using `conda env create -f environment.yml`.
 
 If you see a message that states "file not found", double check that you are running this command from the directory that contains the .yml file. If you type `ls` you should see the .yml file. If you don't see it you likely forgot to run `cd dsc-data-science-env` to change into the right directory.
@@ -344,7 +344,7 @@ On a Mac, run `echo "conda activate learn-env" >> ~/.bash_profile` to add the co
 <details>
 <summary>Windows</summary>
 To follow these instructions on a Windows machine you must be using the Git Bash shell it was suggested to install above.
-Run touch `~/.bash_profile` to create a new file. Next, run `echo "conda activate learn-env" >> ~/.bash_profile` to add the configuration to your bash profile and then run `source ~/.bash_profile` to activate the changes you just made.
+Run `touch ~/.bash_profile` to create a new file. Next, run `echo "conda activate learn-env" >> ~/.bash_profile` to add the configuration to your bash profile and then run `source ~/.bash_profile` to activate the changes you just made.
 </details>
 
 ## Updating your Virtual Environment
