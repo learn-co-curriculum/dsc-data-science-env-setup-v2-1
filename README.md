@@ -1,5 +1,5 @@
 
-# Setting up a Professional Data Science Environment
+# Setting up a Professional Data Science Environment - Setup
 
 ## Introduction
 
