@@ -32,7 +32,6 @@ dependencies:
   - fontconfig=2.13.0
   - freetype=2.9.1
   - fribidi=1.0.5
-  - gcc=4.8.5=8
   - gensim=3.7.3
   - gettext=0.19.8.1
   - glib=2.56.2
@@ -97,7 +96,7 @@ dependencies:
   - numpy=1.16.5
   - numpy-base=1.16.5
   - openssl=1.1.1d
-  - pandas=0.25.1
+  - pandas
   - pandoc=2.2.3.2=0
   - pandocfilters=1.4.2
   - pango=1.42.4
