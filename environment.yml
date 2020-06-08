@@ -53,7 +53,7 @@ dependencies:
   - jmespath=0.9.4
   - joblib=0.13.2
   - jpeg=9b
-  - jsonschema=3.0.2
+  - jsonschema=3.0.2 
   - jupyter_client=5.3.3
   - jupyter_contrib_core=0.3.3
   - jupyter_contrib_nbextensions=0.5.1
