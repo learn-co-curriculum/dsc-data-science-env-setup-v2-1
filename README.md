@@ -8,6 +8,7 @@ In this lesson, you'll continue setting up your professional data science enviro
 ## Objectives
 
 You will be able to:
+
 * Use basic commands to navigate the command line
 * Summarize why virtual environments are used
 * Use a virtual environment
@@ -61,16 +62,13 @@ If you see a message that states "file not found", double check that you are run
 
 You have successfully created your virtual environment! To be sure that you are using the learn-env, it's helpful to set it as your default environment so that you don't need to remember to manually switch to it every time you open terminal. This step is suggested but not required.
 
-<details>
-<summary>Mac</summary>
+### Mac
 On a Mac, run `echo "conda activate learn-env" >> ~/.bash_profile` to add the configuration to your bash profile and then run `source ~/.bash_profile` to activate the changes you just made.
 </details>
 
-<details>
-<summary>Windows</summary>
+### Windows
 To follow these instructions on a Windows machine you must be using the Git Bash shell it was suggested to install above.
 Run `touch ~/.bash_profile` to create a new file. Next, run `echo "conda activate learn-env" >> ~/.bash_profile` to add the configuration to your bash profile and then run `source ~/.bash_profile` to activate the changes you just made.
-</details>
 
 ## Updating your Virtual Environment
 
